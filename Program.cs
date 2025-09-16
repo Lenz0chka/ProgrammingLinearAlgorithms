@@ -7,7 +7,7 @@
             // Задание 1
             Console.WriteLine("Введите число для перевода из двоичной системы в десятичную");
             string BinToDec = Console.ReadLine();
-            Console.WriteLine(Convert.ToInt32(BinToDec, 2));
+            Console.WriteLine(Convert.ToByte(BinToDec, 2));
 
             // Задание 2
             Console.WriteLine("Введите число для перевода из десятичной системы в двоичную");
@@ -21,7 +21,7 @@
             int M = int.Parse(Console.ReadLine()); // Минуты
             Console.WriteLine("Введите через сколько T минут будет осуществлена доставка");
             int T = int.Parse(Console.ReadLine()); // Продукты привезут через столько-то минут
-            Console.WriteLine($"На электронных часах будет {Convert.ToDateTime($"{N}:{M}").AddMinutes(T).ToShortTimeString().ToString()}, когда привезут долгожданные продукты");
+            Console.WriteLine($"На электронных часах будет {Convert.ToDateTime($"{N}:{M}").AddMinutes(T).ToShortTimeString()}, когда привезут долгожданные продукты");
         }
     }
 }
